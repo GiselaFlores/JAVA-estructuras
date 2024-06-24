@@ -3,6 +3,7 @@ package ar.com.codoacodo;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
+import javax.swing.*;
 
 public class App 
 {
@@ -330,5 +331,15 @@ public class App
          Necesitan crear un objeto de tipo Scanner y tener importada la clase.
          */
 
+
+        //JOptionPane
+        
+        //requiere la clase import javax.swing.JOptionPane;
+
+        String edad = JOptionPane.showInputDialog("Ingrese su edad");
+
+        Integer edadUsuario = Integer.parseInt(edad);
+
+        System.out.println("La edad del usuario es: " + edadUsuario);
     }
 }
